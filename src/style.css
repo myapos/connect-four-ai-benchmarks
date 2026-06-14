@@ -1,0 +1,50 @@
+/* Global CSS variables defined on :root so they cascade to all elements */
+:root {
+  /* Board colors */
+  --board-bg: #0052cc;
+  --board-border-radius: 12px;
+
+  /* Cell colors */
+  --cell-empty: #f5f5f5;
+  --cell-player1: #e63946;
+  --cell-player2: #f4d03f;
+  --cell-size: 80px;
+  --cell-gap: 8px;
+
+  /* Container layout */
+  --container-padding: 24px;
+  --container-bg: #1a1a2e;
+  --container-max-width: 700px;
+
+  /* Typography */
+  --font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0b0;
+
+  /* Status banner */
+  --status-bg: #16213e;
+  --status-border-radius: 8px;
+
+  font-family: var(--font-family);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--container-bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#app {
+  width: 100%;
+}
